@@ -4,3 +4,24 @@
     margin: 0px;
     color: rgb(255, 255, 255);
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 252, 252, 0.274);
+    transition: 0.3s;
+    width: 40%;
+    background-color: rgba(195, 216, 211, 0.637);
+    margin-top: 30px;  
+  }
+  
+  .card:hover  {
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.644);
+  }
+  
+  .container {
+    margin: auto;
+    
+}
+a{
+    margin-right: 30px;
+}
+    
