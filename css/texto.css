@@ -18,10 +18,53 @@
   }
   
   .container {
-    margin: auto;
+    height: 950px;
+
+    /*927*/
+    
+    
     
 }
 a{
-    margin-right: 30px;
+    margin-right: 35px;
+    
 }
     
+@media screen and (max-width: 991px) {
+  .container {
+    
+    height: 1300px;
+    
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    
+    height: 2100px;
+    
+    
+}
+
+}
+
+@media screen and (max-width: 575px) {
+  
+  a{
+    margin-right: 50px;
+    
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  
+  a{
+    margin-right: 0px;
+    
+}
+
+}
+
