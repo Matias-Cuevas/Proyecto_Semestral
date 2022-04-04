@@ -1,0 +1,64 @@
+@media screen and (max-width:2000px) {
+    .container {
+      
+      height: 1230px;
+      
+      
+  }
+  
+  }
+  
+  
+  @media screen and (max-width:1199px) {
+    .container {
+      
+      height: 1610px;
+      
+      
+  }
+  
+  }
+
+  @media screen and (max-width: 991px) {
+    .container {
+      
+      height: 2020px;
+      
+  }
+  
+  }
+
+
+
+  
+  @media screen and (max-width: 575px) {
+    
+    a{
+      margin-right: 50px;
+      
+  }
+  .container {
+        
+    height: 2000px;
+    
+    
+}
+  
+  }
+
+  @media screen and (max-width: 545px) {
+    a{
+        margin-right: 0px;
+        
+    }
+    .container {
+        
+      height: 3800px;
+      
+      
+  }
+  
+  }
+
+  
+  

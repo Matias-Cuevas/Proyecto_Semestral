@@ -30,41 +30,5 @@ a{
     
 }
     
-@media screen and (max-width: 991px) {
-  .container {
-    
-    height: 1300px;
-    
-}
 
-}
-
-
-@media screen and (max-width: 767px) {
-  .container {
-    
-    height: 2100px;
-    
-    
-}
-
-}
-
-@media screen and (max-width: 575px) {
-  
-  a{
-    margin-right: 50px;
-    
-}
-
-}
-
-@media screen and (max-width: 500px) {
-  
-  a{
-    margin-right: 0px;
-    
-}
-
-}
 
