@@ -1,7 +1,7 @@
 @media screen and (max-width:2000px) {
     .container {
       
-      height: 1630px;
+      height: 1800px;
       
       
   }
@@ -12,7 +12,7 @@
   @media screen and (max-width:1199px) {
     .container {
       
-      height: 2040px;
+      height: 2210px;
    
   }
   
@@ -22,7 +22,7 @@
   @media screen and (max-width: 991px) {
     .container {
       
-      height: 2470px;
+      height: 2640px;
       
   }
   
@@ -39,7 +39,7 @@
   }
   .container {
         
-    height: 2460px;
+    height: 2630px;
     
     
 }
@@ -53,7 +53,7 @@
     }
     .container {
         
-      height: 4400px;
+      height: 4570px;
       
       
   }
