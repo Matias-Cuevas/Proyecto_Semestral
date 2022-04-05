@@ -2,7 +2,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 .input-container {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; 
   display: flex;
   width: 100%;
   margin-bottom: 15px;
@@ -10,8 +10,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .icon {
   padding: 10px;
-  background: dodgerblue;
-  color: white;
+  background: rgb(30, 144, 255);
+  color: rgb(255, 255, 255);
   min-width: 50px;
   text-align: center;
 }
@@ -23,13 +23,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .input-field:focus {
-  border: 2px solid dodgerblue;
+  border: 2px solid rgb(30, 144, 255);
 }
 
-/* Set a style for the submit button */
+
 .btn {
-  background-color: dodgerblue;
-  color: white;
+  background-color: rgb(30, 144, 255);
+  color: rgb(255, 255, 255);
   padding: 15px 20px;
   border: none;
   cursor: pointer;

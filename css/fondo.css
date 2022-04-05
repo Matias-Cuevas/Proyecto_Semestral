@@ -1,8 +1,8 @@
 .fondo{
     width: 100%;
    
-    background-size: cover; /*hace que la imagen se estire*/
-    background-attachment: fixed; /*hace que la imagen se deslice con la pagina*/
+    background-size: cover; 
+    background-attachment: fixed; 
     margin: 0px;
     background-position: center;
    
