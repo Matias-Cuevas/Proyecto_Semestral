@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/crear_estilo.css">
     <link rel="stylesheet" href="css/formulario.css">
-    <link rel="stylesheet" href="css/fondo_crear.css">
+    <link rel="stylesheet" href="css/fondo_ver_usuario.css">
 
 </head>
 
 <body class="fondo" style="background-image: url(img/fondo.jpg); ">
    
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="principal.html">Anime tier List</a>
+          <a class="navbar-brand" href="principal_user.html">Anime tier List</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,10 +35,13 @@
             <form class="d-flex">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="ini_sesion.html">Iniciar Sesión</a>
+                  <a class="nav-link" href="crear_tier_user.html">Crear tier list</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="principal.html">Cerrar sesión</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="perfil.html">Perfil</a>
                 </li>
                 
               </ul>
@@ -47,12 +50,17 @@
         </div>
       </nav>
 
-<div class="container" style="background-color: rgba(0, 0, 0, 0.308); " >
+<div class="container" style="background-color: rgba(0, 0, 0, 0.308); " > 
 
 
     <center>
 
- 
+        <div class="row w3-round-xxlarge" style="background-color: rgba(195, 216, 211, 0.493)">
+            <div class="col" >
+                <img src="img/perfil/perfil3.jpg" alt="Avatar" class="avatar" > <h3 style="color: black; text-align: center; ">HearDoom</h3>
+            </div>
+            
+        </div>
 
          
         <div class="card" style="width: 15rem; display: inline-block; margin-right: 2%;" >
@@ -145,19 +153,32 @@
               </div>
            </div>
         </div >
+        <div style="background-color: rgba(195, 216, 211, 0.479); padding-bottom: 2%;">
+            <h1>Comentarios</h1>
+        <br>
+        <textarea rows="4" cols="50" name="uname"  placeholder="Escribir comentario..."></textarea> 
+        <div><a  class="btn "onclick="myFunction()" href="principal_user.html" style="width: 33%; margin-left: 2%; ">Publicar comentario</a></div>
+        
+
+        <div  style="border: 5px solid gray;  padding: 2%; margin-left: 10%; margin-right: 10%; margin-top: 3%;">
+            <img src="img/perfil/perfil1.jpg" alt="Avatar" class="avatar" > Muy buen tier list
+        </div>
+        <div  style="border: 5px solid gray;  padding: 2%; margin-left: 10%; margin-right: 10%;margin-top: 3%;">
+            <img src="img/perfil/perfil5.jpg" alt="Avatar" class="avatar" > Muy buen tier list pero no estoy de acurdo con tu eleccion 
+        </div  > 
+        <div  style="border: 5px solid gray;  padding: 2%; margin-left: 10%; margin-right: 10%;margin-top: 3%; ">
+            <img src="img/perfil/perfil4.jpg" alt="Avatar" class="avatar" > No me gusto la tier list 
+        </div>
+
+        </div>
+
         
         
+
 
         
 
        
-            <a  class="btn"onclick="myFunction()" href="principal_user.html" style="margin-top: 10%; margin-bottom: 10%;">Crear tier list</a>
-          <script>
-            function myFunction() {
-              alert("Tier list creada");
-            }
-            </script>
-            
   
 
 
