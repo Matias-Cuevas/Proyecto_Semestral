@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/crear_estilo.css">
     <link rel="stylesheet" href="css/formulario.css">
-    <link rel="stylesheet" href="css/fondo_ver.css">
+    <link rel="stylesheet" href="css/fondo_ver_usuario.css">
 
 </head>
 
 <body class="fondo" style="background-image: url(img/fondo.jpg); ">
    
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="principal.html">Anime tier List</a>
+          <a class="navbar-brand" href="principal_user.html">Anime tier List</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,10 +35,13 @@
             <form class="d-flex">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="ini_sesion.html">Iniciar Sesión</a>
+                  <a class="nav-link" href="crear_tier_user.html">Crear tier list</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="principal.html">Cerrar sesión</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="perfil.html">Perfil</a>
                 </li>
                 
               </ul>
@@ -51,12 +54,12 @@
 
 
 
-      <div class="row w3-round-xxlarge" style="background-color: rgba(195, 216, 211, 0.493)">
-        <div class="col" >
-            <img src="img/perfil/perfil4.jpg" alt="Avatar" class="avatar" > <h3 style="color: black; text-align: center; ">Megant</h3>
+        <div class="row w3-round-xxlarge" style="background-color: rgba(195, 216, 211, 0.493)">
+            <div class="col" >
+                <img src="img/perfil/perfil1.jpg" alt="Avatar" class="avatar" > <h3 style="color: black; text-align: center; ">Discoverat</h3>
+            </div>
+            
         </div>
-        
-    </div>
 
          
         <div class="card" style="width: 15rem; display: inline-block; margin-right: 2%;" >
@@ -87,7 +90,7 @@
             <h5 class="card-title">Overlord</h5>
             <div class="w3-container">
                 <div class="w3-panel w3-blue w3-round-xlarge">
-                  <p style="margin: auto;">Malo</p>
+                  <p style="margin: auto;">Muy bueno</p>
                 </div>
               </div>
            </div>
@@ -98,7 +101,7 @@
             <h5 class="card-title">One punch man</h5>
             <div class="w3-container">
                 <div class="w3-panel w3-blue w3-round-xlarge">
-                  <p style="margin: auto;">No lo conosco</p>
+                  <p style="margin: auto;">Malo</p>
                 </div>
               </div>
            </div>
@@ -133,7 +136,7 @@
             <h5 class="card-title">Boku no hero</h5>
             <div class="w3-container">
                 <div class="w3-panel w3-blue w3-round-xlarge">
-                  <p style="margin: auto;">Malo</p>
+                  <p style="margin: auto;">Muy Bueno</p>
                 </div>
               </div>
            </div>
@@ -149,47 +152,35 @@
               </div>
            </div>
         </div >
-        
-        
-
-
-
         <div style="background-color: rgba(195, 216, 211, 0.479); padding-bottom: 2%;">
-          <h1>Comentarios</h1>
-      
-      <p  style=" margin-top: 3%;" ><img src="img/Like.png" alt="Imagen no disponible"  style="height: 40px; width: 40px;" style="padding-left: 100px;" > +137</p>
+            <h1>Comentarios</h1>
+        <br>
+        <textarea rows="4" cols="50" name="uname"  placeholder="Escribir comentario..."></textarea> 
+        <div><a  class="btn "onclick="myFunction()" href="principal_user.html" style="width: 33%; margin-left: 2%; ">Publicar comentario</a></div>
+        <p class="btn" style=" margin-top: 2%; width: 20%;" ><img src="img/Like.png" alt="Imagen no disponible"  style="height: 30px; width: 30px;" style="padding-left: 100px;" > +150</p>
 
 
 
+        <div class="row" style="margin-top: 4%;">
+            <div class="col-3">  <img src="img/perfil/perfil2.jpg" alt="Avatar" class="avatar"  style="margin-left: 50%;"  > </div>
+            <div class="col">  <p style="margin-top: 2%; text-align: left;"><p style="text-align: left;">masper - hace 1 hora </p> <p style="text-align: left;">Muy buen tier list </p>  </div>
+        </div>
 
+        <div class="row" style="margin-top: 4%;">
+            <div class="col-3">  <img src="img/perfil/perfil4.jpg" alt="Avatar" class="avatar"  style="margin-left: 50%;" > </div>
+            <div class="col">  <p style="margin-top: 2%; text-align: left;"><p style="text-align: left;">- hace 2 hora </p> <p style="text-align: left;">Muy buen tier list pero no estoy de acurdo con tu eleccion </p>  </div>
+        </div>
 
-      <div class="row" style="margin-top: 5%; margin-left: 10%;">
-        <div class="col-3 col-md-2"  >  <img src="img/perfil/perfil2.jpg" alt="Avatar" class="avatar"  style="margin-left: 15%;"  > </div>
-        <div class="col-9 col-md-10">  <p style=" margin-bottom: 1%; text-align: left; ">
-          <p style="text-align: left; font-size: 90%; font-weight: 700;">Muratn - hace 1 hora </p>
-          <p style="text-align: left;">Muy buen tier list </p>  </div>
-    </div>
+        <div class="row" style="margin-top: 4%;">
+            <div class="col-3"> <img src="img/perfil/perfil5.jpg" alt="Avatar" class="avatar"   style="margin-left: 50%;"> </div>
+            <div class="col">  <p style="margin-top: 2%; text-align: left;"><p style="text-align: left;">- hace 3 hora </p> <p style="text-align: left;">No me gusto la tier lis </p>  </div>
+        </div>
 
-    <div class="row" style="margin-top: 5%; margin-left: 10%;">
-        <div class="col-3 col-md-2"  >  <img src="img/perfil/perfil1.jpg" alt="Avatar" class="avatar"  style="margin-left: 15%;" > </div>
-        <div class="col-9 col-md-10">  <p style=" margin-bottom: 1%; text-align: left;">
-          <p style="text-align: left; font-size: 90%; font-weight: 700;">Discoverat - hace 2 hora </p>
-          <p style="text-align: left;">Muy buen tier list pero no estoy de acurdo con tu eleccion </p>  </div>
-    </div>
-
-    <div class="row" style="margin-top: 5%; margin-left: 10%;">
-      <div class="col-3 col-md-2"  > <img src="img/perfil/perfil5.jpg" alt="Avatar" class="avatar"   style="margin-left: 15%;"> </div>
-      <div class="col-9 col-md-10">  <p style=" margin-bottom: 1%; text-align: left;">
-          <p style="text-align: left; font-size: 90%; font-weight: 700;"> Grimplans - hace 3 hora </p> 
-          <p style="text-align: left;">No me gusto la tier lis </p>  </div>
-    </div>
-
-
-
-      </div>
+        </div>
 
         
         
+
 
 
 </div>
