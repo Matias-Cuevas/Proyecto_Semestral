@@ -31,22 +31,30 @@
 
       <div class="container" style="background-color: rgba(0, 0, 0, 0.308); padding-top: 150px;"  >
 
-        <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <form action="" style="max-width:500px;margin:auto" name="formularioV" id="form1">
             
             <div class="input-container" style="margin-top: 5%;">
               <i class="fa fa-user icon"></i>
-              <input class="input-field" type="text" placeholder="Usuario" name="usrnm">
+              <input class="input-field" type="text" placeholder="Ingrese nombre de usuario" id="nom" required>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input class="input-field" type="email" placeholder="Ingrese Email" name="psw" required>
             </div>
           
             <div class="input-container">
               <i class="fa fa-key icon"></i>
-              <input class="input-field" type="password" placeholder="Contaseña" name="psw">
+              <input class="input-field" type="password" placeholder="Ingrese contraseña" name="psw" required>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Repita contraseña" name="psw" required>
             </div>
           
-            <a  class="btn" href="principal.html" >Iniciar Sesión</a>
-            <a  class="btn" href="crear_usuario.html" style="margin-top: 3%;">Crear usuario</a>
-            <a  class="btn" href="principal_user.html" style="margin-top: 15%;">Vista de usuario</a>
-            <a  class="btn" href="principal_admin.html" style="margin-top: 10%;">Vista de Administrador</a>
+            <input type="submit" class="btn btn-primary" style="margin-top: 2%;"  value="Crear Usuario" >
+           
           </form>
 
 
