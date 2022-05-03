@@ -19,7 +19,7 @@
 
 <body class="fondo" style="background-image: url(img/fondo.jpg); ">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="principal_admin.html">Anime tier List</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -29,6 +29,9 @@
             <ul class="navbar-nav me-auto"></ul>
             <form class="d-flex">
               <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="Anime_api_s.html">Animes</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="crear_tier_admin.html">Crear tier list</a>
                 </li>
@@ -49,28 +52,32 @@
 
     
 
-        <div class="row w3-round-xxlarge" >
+        
+
+        <div style="background-color: rgba(240, 255, 255, 0.39);padding-bottom: 5%;">
+          <div class="row w3-round-xxlarge" >
             <div class="col" >
-                <img src="img/perfil/perfil3.jpg" alt="Avatar" class="avatar" > <h3 style="color: black; text-align: center; "></h3>
+                <img src="img/perfil/perfil3.jpg" alt="Avatar" class="avatar" > <h3 style="color: black; text-align: center; ">HearDoom</h3>
 
             </div>
+          </div>
+
+          <form action="/action_page.php">
+              <label for="country">Nombre de usuario:</label>  
+              <input type="text" id="country" name="country" value="HearDoom" style="width: 20%" readonly>
+          
+          </form>
+          <form action="/action_page.php">
+              <label for="country" style="margin-right: 7%; margin-top: 2%; " > Email:</label>  
+              <input type="text" id="country" name="country" value="HearDoom1@hotmail.com" style="width: 20%" readonly>
+          
+          </form>
+
+      </div>
             
         </div>
-
-        <div style="background-color: rgba(240, 255, 255, 0.39);">
-
-            <form action="/action_page.php">
-                <label for="country">Nombre de usuario:</label>  
-                <input type="text" id="country" name="country" value="HearDoom" style="width: 20%" readonly>
             
-            </form>
-            <form action="/action_page.php">
-                <label for="country" style="margin-right: 7%; margin-top: 2%; " > Email:</label>  
-                <input type="text" id="country" name="country" value="HearDoom1@hotmail.com" style="width: 20%" readonly>
-            
-            </form>
-
-        </div>
+        
    
 
 
