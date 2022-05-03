@@ -103,3 +103,55 @@ $(document).ready(function () {
     }
     
 });
+
+$(document).ready(function () {
+    $("#boton").click(function () {
+        $.get("https://api.jikan.moe/v4/top/anime", function (inf_guardar) {
+          $("#cardss").empty();
+            $.each(inf_guardar.data, function (i, item) {
+              if (item.title.length>30){
+                item.title=item.title.slice(0, 35)+"..."
+              };
+                $("#cardss").append(
+                "  <div class='flip-card' style='margin-right: 2%; margin-bottom: 2%;'> <div class='flip-card-inner'> <div class='flip-card-front'>  <img src='"+item.images.jpg.image_url+
+                  " ' alt='Avatar' style='width:300px;height:300px;'> </div> <div class='flip-card-back'><h1> "+(i+1)+".- "+item.title+
+                    "</h1> <p style='font-size: 120%;'> Puntuacion: "+item.score+
+                      "</p> <p> episodios: "+item.episodes+
+                        "</p> <div style='padding-left: 2vw;'> <a  href='"+ item.url+"'target='_blank'> Link My anime list</a> </div> </div> </div> </div>"
+                    
+                    );
+            });
+
+
+        });
+    });
+
+
+});
+$(document).ready(function () {
+  
+  $("#boton1").click(function () {
+      var n=$("#nom_anime").val();
+      $.get("https://api.jikan.moe/v4/anime?q="+n, function (inf_guardar) {
+        $("#cardss").empty();
+          $.each(inf_guardar.data, function (i, item) {
+              if (item.title.length>30){
+                item.title=item.title.slice(0, 35)+"..."
+              };
+
+              $("#cardss").append(
+              " <div class='flip-card' style='margin-right: 2%; margin-bottom: 4%;'> <div class='flip-card-inner'> <div class='flip-card-front'>  <img src='"+item.images.jpg.image_url+
+                " ' alt='Avatar' style='width:300px;height:300px;'>  </div> <div class='flip-card-back'>  <h1 style=''> "+item.title+
+                  "</h1> <p style='font-size: 120%;'> Puntuacion: "+item.score+
+                    "</p> <p> episodios: "+item.episodes+
+                      "</p> <div style='padding-left: 2vw;'> <a  href='"+ item.url+"'target='_blank'> Link My anime list</a> </div> </div> </div> </div> "
+                  
+                  );
+          });
+
+
+      });
+  });
+
+
+});
