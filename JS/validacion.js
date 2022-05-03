@@ -20,11 +20,11 @@ $(document).ready(function () {
         var letraInicial = nombre.charAt(0);
 
         if (!esMayus(letraInicial)) {
-            mensajesMostrar += "La primera letras del nombre debe ser Mayuscula.\n";
+            mensajesMostrar += "La primera letra del nombre debe ser mayúscula.\n";
             entrar = true;
         }
         if ((/\d/.test(contra1) && isNaN(contra1))==false) {
-            mensajesMostrar += "La contraseña debe tener al menos 1 numero y 1 letra.\n";
+            mensajesMostrar += "La contraseña debe tener al menos 1 número y 1 letra.\n";
             entrar = true;
         }
         if (contra1.length < 8 || contra1.length >18) {
@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
     
         if(tiene_mayus(contra1)){
-            mensajesMostrar += "La contraseña debe tener al menos una mayuscula\n";
+            mensajesMostrar += "La contraseña debe tener al menos una mayúscula\n";
             entrar = true;
         }
 
@@ -115,7 +115,7 @@ $(document).ready(function () {
                 $("#cardss").append(
                 "  <div class='flip-card' style='margin-right: 2%; margin-bottom: 2%;'> <div class='flip-card-inner'> <div class='flip-card-front'>  <img src='"+item.images.jpg.image_url+
                   " ' alt='Avatar' style='width:300px;height:300px;'> </div> <div class='flip-card-back'><h1> "+(i+1)+".- "+item.title+
-                    "</h1> <p style='font-size: 120%;'> Puntuacion: "+item.score+
+                    "</h1> <p style='font-size: 120%;'> Puntuación: "+item.score+
                       "</p> <p> episodios: "+item.episodes+
                         "</p> <div style='padding-left: 2vw;'> <a  href='"+ item.url+"'target='_blank'> Link My anime list</a> </div> </div> </div> </div>"
                     
@@ -142,7 +142,7 @@ $(document).ready(function () {
               $("#cardss").append(
               " <div class='flip-card' style='margin-right: 2%; margin-bottom: 4%;'> <div class='flip-card-inner'> <div class='flip-card-front'>  <img src='"+item.images.jpg.image_url+
                 " ' alt='Avatar' style='width:300px;height:300px;'>  </div> <div class='flip-card-back'>  <h1 style=''> "+item.title+
-                  "</h1> <p style='font-size: 120%;'> Puntuacion: "+item.score+
+                  "</h1> <p style='font-size: 120%;'> Puntuación: "+item.score+
                     "</p> <p> episodios: "+item.episodes+
                       "</p> <div style='padding-left: 2vw;'> <a  href='"+ item.url+"'target='_blank'> Link My anime list</a> </div> </div> </div> </div> "
                   
@@ -155,3 +155,12 @@ $(document).ready(function () {
 
 
 });
+
+var input = document.getElementById("nom_anime");
+    input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("boton1").click();
+      }
+    });
+
