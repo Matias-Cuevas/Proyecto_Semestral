@@ -101,8 +101,85 @@ $(document).ready(function () {
     function esMayus(letra) {
         return letra == letra.toUpperCase();
     }
+
+    
+
+$("#form2").submit(function (e) {
+  e.preventDefault();
+  let mensajesMostrar = "";
+  let entrar = false;
+  var nombre = $("#nom2").val();
+  var letras = "ABCDEFGHIJKMNÑLOPQRSTUVWXYZ";
+          
+
+
+
+  if (nombre.length < 4 || nombre.length >10) {
+      mensajesMostrar += "El nombre debe tener entre 4 y 10 caracteres. \n ";
+      entrar = true;
+  }
+  var letraInicial = nombre.charAt(0);
+
+  if (!esMayus(letraInicial)) {
+      mensajesMostrar += "La primera letra del nombre debe ser mayúscula.\n";
+      entrar = true;
+  }
+  
+
+  function tiene_mayus(texto){
+      for(i=0; i<texto.length; i++){
+     if (letras.indexOf(texto.charAt(i),0)!=-1){
+      return 0;
+                                                  }
+                              }
+       return 1;
+  }
+
+  
+
+   function correlativo(texto){
+      for(i=0; i<texto.length; i++){
+         if (Number(texto.charAt(i))+1==Number(texto.charAt(i+1))){
+             return 0;
+             
+         }
+     
+      }
+  }
+
+ 
+
+
+
+  if (entrar) {
+       swal({
+              title: "Error",
+              text: (mensajesMostrar),
+              type: "error"
+          });
+    
+      
+  }
+  else {
+          swal({
+              title: "Sesión iniciada",
+              text: "",
+              confirmButtonText: "OK",
+              type: "success"
+          }, function() {
+              window.location ="principal.html";})
+      
+      
+  }
+});
+
+
     
 });
+
+
+
+
 
 $(document).ready(function () {
     $("#boton").click(function () {
